@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8f3ee;
+    color: #3e2c23;
+}
+header {
+    background: #6f4e37;
+    color: white;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 { margin: 8px 0; }
+nav { display: flex; gap: 16px; }
+nav a { color: white; text-decoration: none; }
+main { padding: 24px; }
+footer { background: #3e2c23; color: white; text-align: center; padding: 12px; }
+
+.daftar-menu, .alasan {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+.kartu {
+    width: 220px;
+    padding: 16px;
+    border: 1px solid #d7c4b3;
+    border-radius: 8px;
+    background: white;
+}
+.kartu img { border-radius: 6px; width: 100%; }
+#promo { background: #ffe8c2; padding: 12px; border-radius: 8px; margin-bottom: 20px; }
+
+table { border-collapse: collapse; background: white; width: 100%; }
+th, td { padding: 8px 12px; border: 1px solid #d7c4b3; text-align: left; }
+th { background: #6f4e37; color: white; }
+
+label { display: inline-block; width: 100px; margin: 6px 0; }
+input[type="text"], input[type="tel"], input[type="number"], select, textarea {
+    padding: 6px;
+    border: 1px solid #d7c4b3;
+    border-radius: 4px;
+}
+
+.selesai { background: #d4edda !important; }
+.error { color: red; display: block; margin-left: 104px; font-size: 12px; }
+#pesanSukses { color: green; font-weight: bold; }
+
+img { max-width: 100%; height: auto; }
+
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 8px; }
+    .kartu { width: 100%; }
+    main { padding: 16px; }
+}
